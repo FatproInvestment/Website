@@ -20,15 +20,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      # 如果你的 Docusaurus 项目在子目录中，添加这一步
-      - name: Change to project directory
-        run: cd fatbro_site  # 替换为实际的子目录名
-      
       - uses: actions/setup-node@v3
         with:
           node-version: 18
           # 修改缓存配置，使用 npm 而不是 yarn
           cache: npm
+      
+      - name: List directory contents
+        run: ls -la
       
       # 使用 npm 而不是 yarn
       - name: Install dependencies
