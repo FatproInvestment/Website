@@ -10,7 +10,7 @@
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
-    "deploy:github": "GIT_USER=<GITHUB_USERNAME> docusaurus deploy",
+    "deploy:github": "GIT_USER=FatproInvestment docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",

@@ -17,8 +17,8 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'fatbro', // 通常是你的 GitHub 用户名或组织名
-  projectName: 'fatbro_site', // 通常是你的仓库名
+  organizationName: 'FatproInvestment', // 通常是你的 GitHub 用户名或组织名
+  projectName: 'Website', // 通常是你的仓库名
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
