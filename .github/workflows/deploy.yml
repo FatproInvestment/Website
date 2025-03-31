@@ -19,22 +19,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
+      # 如果你的 Docusaurus 项目在子目录中，添加这一步
+      - name: Change to project directory
+        run: cd fatbro_site  # 替换为实际的子目录名
+      
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: yarn
-
+          # 修改缓存配置，使用 npm 而不是 yarn
+          cache: npm
+      
+      # 使用 npm 而不是 yarn
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm install
+      
       - name: Build website
-        run: yarn build
-
+        run: npm run build
+      
       # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 构建输出到 `build` 目录
-          publish_dir: ./build
-          # 为自定义域名创建 CNAME 文件
+          # 如果项目在子目录中，修改构建输出目录路径
+          publish_dir: ./build  # 或 ./fatbro_site/build
           cname: fatbro.io 
