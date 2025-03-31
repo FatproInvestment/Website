@@ -1,0 +1,466 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #3578e5;
+  --ifm-color-primary-dark: #2e6ad1;
+  --ifm-color-primary-darker: #2b64c6;
+  --ifm-color-primary-darkest: #2352a2;
+  --ifm-color-primary-light: #4886e8;
+  --ifm-color-primary-lighter: #548feb;
+  --ifm-color-primary-lightest: #74a6ef;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  /* 自定义变量 */
+  --fatbro-banner-height: 250px;
+  --fatbro-content-height: calc(100vh - var(--fatbro-banner-height) - var(--ifm-navbar-height) - var(--ifm-footer-padding-vertical) * 2);
+  --rssapp-border-radius: 8px;
+  --rssapp-item-border-radius: 8px;
+  --rssapp-item-spacing: 16px;
+  --rssapp-background-color: transparent;
+  --rssapp-border-color: #e1e8ed;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #5a91ea;
+  --ifm-color-primary-dark: #3f7de7;
+  --ifm-color-primary-darker: #3274e5;
+  --ifm-color-primary-darkest: #175cc9;
+  --ifm-color-primary-light: #75a5ed;
+  --ifm-color-primary-lighter: #82aeef;
+  --ifm-color-primary-lightest: #aac8f4;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --rssapp-border-color: #38444d;
+}
+
+/* 三列布局 */
+.three-column-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 2.4fr 1.3fr;
+  gap: 1rem;
+  margin: 0 auto;
+  max-width: 1400px;
+  height: 800px;
+}
+
+/* 左侧栏 - 投资机会 */
+.left-sidebar {
+  overflow-y: hidden;
+  padding: 0.75rem;
+  padding-right: 0.5rem;
+  border-right: 0cqh solid var(--ifm-color-emphasis-300);
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-sidebar h2 {
+  margin-bottom: 0.5rem !important;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+/* 中间内容区 - 文章列表 */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  padding: 0;
+}
+
+.main-content-header {
+  padding: 0.75rem 0.75rem 0;
+  background-color: var(--ifm-background-color);
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.main-content-header h2 {
+  margin-bottom: 0.5rem !important;
+  flex-shrink: 0;
+  font-size: 1.5rem;
+  padding: 0 0 0.5rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.main-content-articles {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0 0.75rem 1rem;
+  scrollbar-width: thin;
+}
+
+/* 右侧栏 - 工具链接 */
+.right-sidebar {
+  overflow-y: auto;
+  padding: 1rem;
+  padding-left: 0.75rem;
+  height: 800px;
+}
+
+/* iframe 容器 */
+.iframe-container {
+  margin-top: 2rem;
+  max-width: 1400px;
+  margin: 2rem auto 0;
+}
+
+.iframe-rows {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.iframe-full {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.iframe-half {
+  width: 49%;
+  height: 400px;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .iframe-half {
+    width: 100%;
+  }
+}
+
+/* 工具链接样式 */
+.tool-link {
+  display: flex;
+  align-items: flex-start;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: var(--ifm-color-emphasis-100);
+  transition: background-color 0.2s ease;
+  width: 100%;
+}
+
+.tool-link:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  text-decoration: none;
+}
+
+.tool-link img {
+  width: 64px;
+  height: 64px;
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.tool-link-content {
+  flex: 1;
+}
+
+.tool-link-content h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.tool-link-content p {
+  margin: 0.25rem 0 0;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-700);
+  line-height: 1.4;
+}
+
+/* Twitter 嵌入样式 */
+.twitter-timeline-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  overflow: hidden;
+  margin-top: 1rem;
+  border-radius: 8px;
+  background-color: var(--ifm-background-color);
+}
+
+/* Twitter widget iframe样式 */
+.twitter-timeline-container iframe {
+  width: 100% !important;
+  min-height: 550px !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: auto !important;
+  flex: 1;
+}
+
+/* Banner 样式 */
+.hero-banner {
+  position: relative;
+  background-image: url('/img/fatbro_banner.png');
+  /* background-image: linear-gradient(to right, var(--ifm-color-primary-darkest), var(--ifm-color-primary)); */
+  color: #FF9B00;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.hero-social-button {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #0088cc;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.hero-social-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FF9B00;
+  text-decoration: none;
+}
+
+.hero-social-button svg {
+  margin-right: 0.5rem;
+}
+
+/* 加载中动画 */
+.loading-spinner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.loading-spinner::before,
+.loading-spinner::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.loading-spinner::before {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(29, 155, 240, 0.2);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.loading-spinner::after {
+  width: 25px;
+  height: 25px;
+  background-color: #1d9bf0;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 0.8;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 暗色模式下的loading spinner */
+html[data-theme='dark'] .loading-spinner::before {
+  background-color: rgba(29, 155, 240, 0.3);
+}
+
+html[data-theme='dark'] .loading-spinner::after {
+  background-color: #1d9bf0;
+}
+
+/* RSS组件样式 */
+.main-content-articles rssapp-list {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* 解决RSS组件可能的ResizeObserver错误 */
+rssapp-list {
+  display: block;
+  min-height: 500px;
+}
+
+/* 确保RSS组件iframe能够正确适应容器 */
+.main-content-articles iframe {
+  border: none !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 500px !important;
+}
+
+/* 响应式布局 */
+@media (max-width: 996px) {
+  .three-column-layout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  
+  .left-sidebar, .right-sidebar, .main-content {
+    border: none;
+    max-height: none;
+    height: auto;
+    min-height: 600px;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    overflow-x: hidden;
+  }
+  
+  /* 确保左侧边栏在移动端滚动正常 */
+  .left-sidebar .articles-container {
+    max-height: 600px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; /* 为iOS设备启用惯性滚动 */
+  }
+  
+  /* 确保主内容区在移动端滚动正常 */
+  .main-content .main-content-articles {
+    max-height: 800px;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* RSS微件在移动设备上的修复 */
+  .rss-content-wrapper, 
+  .rss-main-wrapper {
+    max-height: 600px !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .articles-container div[style],
+  .main-content-articles div[style] {
+    max-height: 600px !important;
+    overflow-y: auto !important;
+  }
+  
+  /* 修复RSS app的iframe容器在移动设备上的滚动问题 */
+  rssapp-list {
+    max-height: none !important;
+    height: auto !important;
+  }
+  
+  /* Twitter时间线容器 */
+  .twitter-timeline-container {
+    width: 100%;
+    max-width: 100%;
+    min-height: 500px;
+    height: 500px;
+  }
+  
+  .twitter-timeline-container iframe {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  .iframe-half {
+    width: 100%;
+  }
+  
+  .main-content-articles {
+    padding: 0 1rem 1rem;
+  }
+  
+  .left-sidebar {
+    min-height: 700px;
+    height: 700px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* RSS微件样式 */
+.articles-container {
+  border-radius: 8px;
+  overflow: auto;
+  margin-bottom: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 确保RSS小部件内容可以滚动 */
+.articles-container > div {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 680px;
+}
+
+/* RSS App内容区域样式 */
+rssapp-list {
+  display: block;
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+/* 让包含rssapp-list的div容器滚动，而不是它自己滚动 */
+.articles-container div[style] {
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+/* 修复RSS微件在暗色模式下的显示问题 */
+html[data-theme='dark'] .rssapp-list {
+  --rssapp-item-background-color: #1e2125;
+  --rssapp-item-title-color: #e3e3e3;
+  --rssapp-item-metadata-color: #aaa;
+  --rssapp-item-description-color: #ccc;
+}
+
+/* 确保RSS微件在所有屏幕尺寸下显示良好 */
+@media (max-width: 768px) {
+  .articles-container {
+    padding: 0;
+  }
+}
+
+/* 加载容器样式优化 */
+.loading-container {
+  background-color: var(--ifm-background-surface-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+
+/* 暗色模式下调整 */
+html[data-theme='dark'] .loading-container {
+  background-color: var(--ifm-color-emphasis-100);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

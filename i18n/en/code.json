@@ -1,0 +1,162 @@
+{
+  "个人投资分享与思考": {
+    "message": "Personal Investment Insights & Analysis",
+    "description": "Homepage tagline"
+  },
+  "FatBro Investment": {
+    "message": "FatBro Investment",
+    "description": "The site title"
+  },
+  "关注推特": {
+    "message": "Follow on Twitter",
+    "description": "Twitter follow button"
+  },
+  "订阅专栏": {
+    "message": "Subscribe to Newsletter",
+    "description": "Substack subscribe button"
+  },
+  "Twitter": {
+    "message": "Twitter",
+    "description": "Twitter label"
+  },
+  "Substack": {
+    "message": "Substack",
+    "description": "Substack label"
+  },
+  "热点机会": {
+    "message": "Hot Alpha",
+    "description": "Left sidebar title"
+  },
+  "推文加载中...": {
+    "message": "Loading tweets...",
+    "description": "Twitter loading message"
+  },
+  "文章精选": {
+    "message": "Featured Articles",
+    "description": "articles section title"
+  },
+  "阅读全文": {
+    "message": "Read More",
+    "description": "Read more text"
+  },
+  "工具箱": {
+    "message": "Toolbox",
+    "description": "Tools section title"
+  },
+  "数据与资讯": {
+    "message": "Data & Insights",
+    "description": "Data section title"
+  },
+  "投资机会": {
+    "message": "Investment Opportunities",
+    "description": "Opportunities page title"
+  },
+  "发现潜在的投资机会和市场洞察": {
+    "message": "Discover potential investment opportunities and market insights",
+    "description": "Opportunities page subtitle"
+  },
+  "了解详情": {
+    "message": "Learn More",
+    "description": "Learn more button"
+  },
+  "市场趋势分析": {
+    "message": "Market Trend Analysis",
+    "description": "Market trend section title"
+  },
+  "全球宏观经济趋势": {
+    "message": "Global Macroeconomic Trends",
+    "description": "Macro trends title"
+  },
+  "分析当前全球宏观经济环境，包括通胀、利率、经济增长等因素对投资市场的影响。": {
+    "message": "Analysis of the current global macroeconomic environment, including the impact of inflation, interest rates, economic growth and other factors on investment markets.",
+    "description": "Macro trends description"
+  },
+  "查看分析": {
+    "message": "View Analysis",
+    "description": "View analysis button"
+  },
+  "行业轮动策略": {
+    "message": "Sector Rotation Strategy",
+    "description": "Sector rotation title"
+  },
+  "根据经济周期的不同阶段，探讨如何通过行业轮动策略优化投资组合配置。": {
+    "message": "Discusses how to optimize portfolio allocation through sector rotation strategies based on different stages of the economic cycle.",
+    "description": "Sector rotation description"
+  },
+  "查看策略": {
+    "message": "View Strategy",
+    "description": "View strategy button"
+  },
+  "投资工具箱": {
+    "message": "Investment Toolbox",
+    "description": "Tools page title"
+  },
+  "精选实用工具，助力你的投资决策": {
+    "message": "Curated practical tools to support your investment decisions",
+    "description": "Tools page subtitle"
+  },
+  "使用工具": {
+    "message": "Use Tool",
+    "description": "Use tool button"
+  },
+  "推荐工具": {
+    "message": "Recommended Tools",
+    "description": "Recommended tools section"
+  },
+  "所有工具": {
+    "message": "All Tools",
+    "description": "All tools section"
+  },
+  "市场实时数据": {
+    "message": "Real-time Market Data",
+    "description": "Market data section"
+  },
+  "全球市场概览": {
+    "message": "Global Market Overview",
+    "description": "Global market title"
+  },
+  "加密货币市场": {
+    "message": "Cryptocurrency Market",
+    "description": "Crypto market title"
+  },
+  "经济日历": {
+    "message": "Economic Calendar",
+    "description": "Economic calendar title"
+  },
+  "homepage.description": {
+    "message": "FatBro Investment - Make your wallet fat with crypto insights",
+    "description": "The homepage meta description"
+  },
+  "opportunities.title": {
+    "message": "Investment Opportunities | FatBro Investment",
+    "description": "The opportunities page title"
+  },
+  "opportunities.description": {
+    "message": "Explore investment opportunities and market insights shared by FatBro, discover potential high-return investment areas.",
+    "description": "The opportunities page meta description"
+  },
+  "tools.title": {
+    "message": "Investment Tools | FatBro Investment",
+    "description": "The tools page title"
+  },
+  "tools.description": {
+    "message": "FatBro's curated investment toolbox, helping you make smarter investment decisions.",
+    "description": "The tools page meta description"
+  },
+  "让你的钱包变胖": {
+    "message": "Make Your Wallet Fat",
+    "description": "tagline"
+  },
+  "加载中...": {
+    "message": "Loading...",
+    "description": "loading message"
+  },
+  "无法加载Twitter时间线": {
+    "message": "Unable to load Twitter timeline",
+    "description": "Twitter error message"
+  },
+  "重试": {
+    "message": "Retry",
+    "description": "Retry button"
+  }
+} 
